@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.aketzagonzalez.aeropuertosJ.miniCopperController">
    <children>
       <HBox alignment="CENTER" prefHeight="100.0" style="-fx-background-color: BLACK;">
@@ -52,46 +51,18 @@
       </HBox>
       <HBox spacing="20.0">
          <children>
-            <ToggleButton fx:id="btnBlazingRed" mnemonicParsing="false" selected="true">
+            <ToggleButton fx:id="btnBlazingRed" mnemonicParsing="false" onMouseClicked="#cambiarColor" selected="true">
                <toggleGroup>
                   <ToggleGroup fx:id="grupoColores" />
                </toggleGroup>
             </ToggleButton>
-            <ToggleButton fx:id="btnElectricBlue" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores1" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnLapisluxuryBlue" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores2" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnMidnightBlack" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores3" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnMoonwalkGrey" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores4" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnPepperWhite" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores5" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnThunderGray" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores6" />
-               </toggleGroup>
-            </ToggleButton>
-            <ToggleButton fx:id="btnVolcaninOrange" mnemonicParsing="false">
-               <toggleGroup>
-                  <ToggleGroup fx:id="grupoColores7" />
-               </toggleGroup>
-            </ToggleButton>
+            <ToggleButton fx:id="btnElectricBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnLapisluxuryBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnMidnightBlack" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnMoonwalkGrey" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnPepperWhite" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnThunderGray" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnVolcaninOrange" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
          </children>
          <padding>
             <Insets left="20.0" right="20.0" />

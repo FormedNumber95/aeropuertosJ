@@ -36,35 +36,19 @@ public class miniCopperController {
     private ToggleGroup grupoColores;
 
     @FXML
-    private ToggleGroup grupoColores1;
-
-    @FXML
-    private ToggleGroup grupoColores2;
-
-    @FXML
-    private ToggleGroup grupoColores3;
-
-    @FXML
-    private ToggleGroup grupoColores4;
-
-    @FXML
-    private ToggleGroup grupoColores5;
-
-    @FXML
-    private ToggleGroup grupoColores6;
-
-    @FXML
-    private ToggleGroup grupoColores7;
-
-    @FXML
     private ImageView imgActivarLuces;
 
     @FXML
     private ImageView imgLuces;
 
     @FXML
-    void toggleLuces(MouseEvent event) {
+    void cambiarColor(MouseEvent event) {
 
+    }
+
+    @FXML
+    void toggleLuces(MouseEvent event) {
+    	imgLuces.setVisible(!imgLuces.isVisible());
     }
 
 }
