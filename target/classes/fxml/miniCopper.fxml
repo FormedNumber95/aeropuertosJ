@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: BLACK;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.aketzagonzalez.aeropuertosJ.miniCopperController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" style="-fx-background-color: BLACK;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/cooperLogo.png" />
+               </image>
+            </ImageView>
+            <Label text="CONFIGURA TU MINI COPPER" textFill="WHITE" />
+         </children>
+      </HBox>
+      <ImageView fx:id="imgActivarLuces" onMouseClicked="#toggleLuces" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/lucesOff.png" />
+         </image>
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </ImageView>
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/coches/miniBlazingRed.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgLuces" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../imagenes/autoLuz.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <HBox alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" text="Selecciona tu color favorito" textFill="WHITE" />
+         </children>
+      </HBox>
+      <HBox spacing="20.0">
+         <children>
+            <ToggleButton fx:id="btnBlazingRed" mnemonicParsing="false" selected="true">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnElectricBlue" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores1" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnLapisluxuryBlue" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores2" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnMidnightBlack" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores3" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnMoonwalkGrey" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores4" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnPepperWhite" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores5" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnThunderGray" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores6" />
+               </toggleGroup>
+            </ToggleButton>
+            <ToggleButton fx:id="btnVolcaninOrange" mnemonicParsing="false">
+               <toggleGroup>
+                  <ToggleGroup fx:id="grupoColores7" />
+               </toggleGroup>
+            </ToggleButton>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
