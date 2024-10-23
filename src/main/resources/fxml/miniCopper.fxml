@@ -32,7 +32,7 @@
       </ImageView>
       <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
          <children>
-            <ImageView pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgCoche" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/coches/miniBlazingRed.png" />
                </image>
@@ -51,18 +51,74 @@
       </HBox>
       <HBox spacing="20.0">
          <children>
-            <ToggleButton fx:id="btnBlazingRed" mnemonicParsing="false" onMouseClicked="#cambiarColor" selected="true">
+            <ToggleButton fx:id="btnBlazingRed" mnemonicParsing="false" onMouseClicked="#cambiarColor" selected="true" style="-fx-background-color: black;">
                <toggleGroup>
                   <ToggleGroup fx:id="grupoColores" />
                </toggleGroup>
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorBlazingRed.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </ToggleButton>
-            <ToggleButton fx:id="btnElectricBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnLapisluxuryBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnMidnightBlack" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnMoonwalkGrey" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnPepperWhite" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnThunderGray" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
-            <ToggleButton fx:id="btnVolcaninOrange" mnemonicParsing="false" onMouseClicked="#cambiarColor" toggleGroup="$grupoColores" />
+            <ToggleButton fx:id="btnElectricBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorElectricBlue.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnLapisluxuryBlue" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorLapisluxuryBlue.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnMidnightBlack" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorMidnightBlack.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnMoonwalkGrey" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorMoonwalkGrey.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnPepperWhite" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorPepperWhite.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnThunderGray" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorThunderGray.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
+            <ToggleButton fx:id="btnVolcaninOrange" mnemonicParsing="false" onMouseClicked="#cambiarColor" style="-fx-background-color: black;" toggleGroup="$grupoColores">
+               <graphic>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/colores/colorVolcaninOrange.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic></ToggleButton>
          </children>
          <padding>
             <Insets left="20.0" right="20.0" />
