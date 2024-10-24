@@ -7,44 +7,64 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
+/**
+ * Clase miniCopperController.
+ */
 public class miniCopperController {
 
+    /** El btn blazing red. */
     @FXML
     private ToggleButton btnBlazingRed;
 
+    /** El btn electric blue. */
     @FXML
     private ToggleButton btnElectricBlue;
 
+    /** El btn lapisluxury blue. */
     @FXML
     private ToggleButton btnLapisluxuryBlue;
 
+    /** El btn midnight black. */
     @FXML
     private ToggleButton btnMidnightBlack;
 
+    /** El btn moonwalk grey. */
     @FXML
     private ToggleButton btnMoonwalkGrey;
 
+    /** El btn pepper white. */
     @FXML
     private ToggleButton btnPepperWhite;
 
+    /** El btn thunder gray. */
     @FXML
     private ToggleButton btnThunderGray;
 
+    /** El btn volcanin orange. */
     @FXML
     private ToggleButton btnVolcaninOrange;
 
+    /** El grupo colores. */
     @FXML
     private ToggleGroup grupoColores;
 
+    /** LA img activar luces. */
     @FXML
     private ImageView imgActivarLuces;
 
+    /** La img luces. */
     @FXML
     private ImageView imgLuces;
     
+    /** La img coche. */
     @FXML
     private ImageView imgCoche;
 
+    /**
+     * Cambiar color del coche.
+     *
+     * @param event the event
+     */
     @FXML
     void cambiarColor(MouseEvent event) {
     	if(btnBlazingRed.isSelected()) {
@@ -81,6 +101,11 @@ public class miniCopperController {
     	}
     }
 
+    /**
+     * Cambia es estado de las luces (encendidas/apagadas).
+     *
+     * @param event the event
+     */
     @FXML
     void toggleLuces(MouseEvent event) {
     	if(imgLuces.isVisible()) {
